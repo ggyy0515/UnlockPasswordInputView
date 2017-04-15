@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_asd" translatesAutoresizingMaskIntoConstraints="NO" id="FCA-qh-oG9">
+                                <rect key="frame" x="37.5" y="250.5" width="300" height="166"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="E0T-nL-wwg" appends="YES" id="hf4-2k-WK6"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locker_inst_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-ny-2vz">
+                                <rect key="frame" x="37" y="199.5" width="56" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Hk0-jK-S72"/>
+                                    <constraint firstAttribute="width" constant="56" id="Xn1-kl-o6m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点我现身" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-KR-SHY">
+                                <rect key="frame" x="93" y="199" width="282" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z1h-KR-SHY" firstAttribute="top" secondItem="YjS-ny-2vz" secondAttribute="top" id="TOS-Fw-x7G"/>
+                            <constraint firstAttribute="trailing" secondItem="Z1h-KR-SHY" secondAttribute="trailing" id="cBq-jf-rSZ"/>
+                            <constraint firstItem="FCA-qh-oG9" firstAttribute="leading" secondItem="YjS-ny-2vz" secondAttribute="leading" id="cfa-Us-VBh"/>
+                            <constraint firstItem="FCA-qh-oG9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyK-tn-cSN"/>
+                            <constraint firstItem="FCA-qh-oG9" firstAttribute="top" secondItem="YjS-ny-2vz" secondAttribute="bottom" constant="5" id="hk5-kA-juR"/>
+                            <constraint firstItem="Z1h-KR-SHY" firstAttribute="leading" secondItem="YjS-ny-2vz" secondAttribute="trailing" id="mk6-pM-oX0"/>
+                            <constraint firstItem="FCA-qh-oG9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sU6-ab-trG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="E0T-nL-wwg">
+                    <connections>
+                        <action selector="show" destination="BYZ-38-t0r" id="dUi-wK-QYy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locker_inst_arrow" width="56" height="46"/>
+        <image name="pic_asd" width="300" height="166"/>
+    </resources>
+</document>

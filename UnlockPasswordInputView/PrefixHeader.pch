@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  UnlockPasswordInputView
+//
+//  Created by Tristan on 2017/4/14.
+//  Copyright © 2017年 Tristan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define CLEAR_COLOR                     [UIColor clearColor]
+#define WEAK_SELF                       typeof(self) __weak weakSelf = self;
+#define UIColorFromHexString(value)     [UIColor colorWithHexString:value andAlpha:1.0f]
+#define LString(obj)                    (obj) //项目中做国际化的，懒得改了，写个宏
+#define SCREEN_WIDTH                    [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT                   [UIScreen mainScreen].bounds.size.height
+#define CELL_IDENTIFY_WITH_OBJECT(obj)  NSStringFromClass([obj class])
+
+#import "UIColor+expanded.h"
+#import "Masonry.h"
+#import "UIImage+Common.h"
+#import "UIButton+ClickedBlock.h"
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
