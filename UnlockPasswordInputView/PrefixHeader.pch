@@ -11,6 +11,7 @@
 
 #define CLEAR_COLOR                     [UIColor clearColor]
 #define WEAK_SELF                       typeof(self) __weak weakSelf = self;
+#define STRONG_SELF                     typeof(weakSelf) __strong strongSelf = weakSelf;
 #define UIColorFromHexString(value)     [UIColor colorWithHexString:value andAlpha:1.0f]
 #define LString(obj)                    (obj) //项目中做国际化的，懒得改了，写个宏
 #define SCREEN_WIDTH                    [UIScreen mainScreen].bounds.size.width
@@ -21,6 +22,7 @@
 #import "Masonry.h"
 #import "UIImage+Common.h"
 #import "UIButton+ClickedBlock.h"
+#import "UIAlertView+CompleteBlock.h"
 
 
 

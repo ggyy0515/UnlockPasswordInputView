@@ -30,6 +30,9 @@
 		6AC5B2681EA09A6B00A55C5A /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B2671EA09A6B00A55C5A /* UIImage+Common.m */; };
 		6AC5B26B1EA09ABD00A55C5A /* UIButton+ClickedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B26A1EA09ABD00A55C5A /* UIButton+ClickedBlock.m */; };
 		6AC5B26E1EA09B3C00A55C5A /* DNLockerInputPasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B26D1EA09B3C00A55C5A /* DNLockerInputPasswordCell.m */; };
+		6AC5B2B11EA8B00400A55C5A /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B2B01EA8B00400A55C5A /* UIViewController+MaryPopin.m */; };
+		6AC5B2B41EA8B09800A55C5A /* DNPopinLockPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B2B21EA8B09800A55C5A /* DNPopinLockPasswordViewController.m */; };
+		6AC5B2B71EA8B2C500A55C5A /* UIAlertView+CompleteBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B2B61EA8B2C500A55C5A /* UIAlertView+CompleteBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,12 @@
 		6AC5B26C1EA09B3C00A55C5A /* DNLockerInputBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNLockerInputBoardCell.h; sourceTree = "<group>"; };
 		6AC5B26D1EA09B3C00A55C5A /* DNLockerInputPasswordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNLockerInputPasswordCell.m; sourceTree = "<group>"; };
 		6AC5B26F1EA09B9400A55C5A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6AC5B2AF1EA8B00400A55C5A /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
+		6AC5B2B01EA8B00400A55C5A /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
+		6AC5B2B21EA8B09800A55C5A /* DNPopinLockPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPopinLockPasswordViewController.m; sourceTree = "<group>"; };
+		6AC5B2B31EA8B09800A55C5A /* DNPopinLockPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPopinLockPasswordViewController.h; sourceTree = "<group>"; };
+		6AC5B2B51EA8B2C500A55C5A /* UIAlertView+CompleteBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+CompleteBlock.h"; sourceTree = "<group>"; };
+		6AC5B2B61EA8B2C500A55C5A /* UIAlertView+CompleteBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+CompleteBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +150,7 @@
 		6AC5B2341EA0986300A55C5A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6AC5B2AE1EA8B00400A55C5A /* MaryPopin */,
 				6AC5B2351EA0986300A55C5A /* Masonry */,
 			);
 			path = Vendor;
@@ -189,6 +199,8 @@
 		6AC5B2501EA0986300A55C5A /* PasswordInputView */ = {
 			isa = PBXGroup;
 			children = (
+				6AC5B2B31EA8B09800A55C5A /* DNPopinLockPasswordViewController.h */,
+				6AC5B2B21EA8B09800A55C5A /* DNPopinLockPasswordViewController.m */,
 				6AC5B26C1EA09B3C00A55C5A /* DNLockerInputBoardCell.h */,
 				6AC5B2511EA0986300A55C5A /* DNLockerInputBoardCell.m */,
 				6AC5B2521EA0986300A55C5A /* DNLockerInputPasswordCell.h */,
@@ -202,6 +214,8 @@
 		6AC5B2621EA09A0800A55C5A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6AC5B2B51EA8B2C500A55C5A /* UIAlertView+CompleteBlock.h */,
+				6AC5B2B61EA8B2C500A55C5A /* UIAlertView+CompleteBlock.m */,
 				6AC5B2691EA09ABD00A55C5A /* UIButton+ClickedBlock.h */,
 				6AC5B26A1EA09ABD00A55C5A /* UIButton+ClickedBlock.m */,
 				6AC5B2661EA09A6B00A55C5A /* UIImage+Common.h */,
@@ -210,6 +224,15 @@
 				6AC5B2641EA09A0800A55C5A /* UIColor+expanded.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		6AC5B2AE1EA8B00400A55C5A /* MaryPopin */ = {
+			isa = PBXGroup;
+			children = (
+				6AC5B2AF1EA8B00400A55C5A /* UIViewController+MaryPopin.h */,
+				6AC5B2B01EA8B00400A55C5A /* UIViewController+MaryPopin.m */,
+			);
+			path = MaryPopin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC5B2B71EA8B2C500A55C5A /* UIAlertView+CompleteBlock.m in Sources */,
 				6AC5B25D1EA0986300A55C5A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				6AC5B2681EA09A6B00A55C5A /* UIImage+Common.m in Sources */,
 				6AC5B25B1EA0986300A55C5A /* MASViewConstraint.m in Sources */,
+				6AC5B2B41EA8B09800A55C5A /* DNPopinLockPasswordViewController.m in Sources */,
 				6AC5B2561EA0986300A55C5A /* MASCompositeConstraint.m in Sources */,
 				6AC5B25C1EA0986300A55C5A /* NSArray+MASAdditions.m in Sources */,
 				6AC5B25F1EA0986300A55C5A /* README.md in Sources */,
@@ -298,6 +323,7 @@
 				6AC5B26E1EA09B3C00A55C5A /* DNLockerInputPasswordCell.m in Sources */,
 				6AC5B21F1EA080DA00A55C5A /* main.m in Sources */,
 				6AC5B25E1EA0986300A55C5A /* View+MASAdditions.m in Sources */,
+				6AC5B2B11EA8B00400A55C5A /* UIViewController+MaryPopin.m in Sources */,
 				6AC5B25A1EA0986300A55C5A /* MASViewAttribute.m in Sources */,
 				6AC5B2571EA0986300A55C5A /* MASConstraint.m in Sources */,
 				6AC5B2581EA0986300A55C5A /* MASConstraintMaker.m in Sources */,
