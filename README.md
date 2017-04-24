@@ -18,10 +18,10 @@
  @param dismissBlock 消失回调
 
  */
-+ (void)showWithTitle:(NSString *)title
-  	    completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock
- forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction
- 	     dismissBlock:(void(^)())dismissBlock;
++ (void)showWithTitle:(NSString *)title 
+        completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock 
+ forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction 
+         dismissBlock:(void(^)())dismissBlock;
 
   /**
 
