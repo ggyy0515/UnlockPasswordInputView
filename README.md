@@ -4,6 +4,7 @@
 
   type1: DNLockerInputPasswordView 
 
+```objc
   /**
 
  显示输入密码界面
@@ -14,17 +15,13 @@
 
  @param forgetPasswordAction 忘记密码的回调
 
- @param dismissBlock 消失回调`
+ @param dismissBlock 消失回调
 
  */
-
-  \+ (void)showWithTitle:(NSString *)title
-
-  completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock
-
-  forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction
-
-  dismissBlock:(void(^)())dismissBlock;
++ (void)showWithTitle:(NSString *)title
+  	    completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock
+ forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction
+ 	     dismissBlock:(void(^)())dismissBlock;
 
   /**
 
@@ -32,7 +29,7 @@
 
   */
 
-  \- (void)dismiss;
+  - (void)dismiss;
 
   /**
 
@@ -40,10 +37,12 @@
 
   */
 
-  \- (void)clearInput;
+  - (void)clearInput;
+```
 
   type2: DNPopinLockerInputPasswordBoard
 
+```objc
   /**
 
   显示输入密码界面
@@ -60,15 +59,11 @@
 
   */
 
-  \+ (void)showWithTitle:(NSString *)title
-
-    superVC:(UIViewController *)superVC
-
-    completeBlock:(void(^)(NSString *password, DNPopinLockPasswordViewController *passwordVC))completeBlock
-
-    forgetPasswordAction:(void(^)(DNPopinLockPasswordViewController *passwordVC))forgetPasswordAction
-
-    dismissBlock:(void(^)())dismissBlock;
+  + (void)showWithTitle:(NSString *)title
+                superVC:(UIViewController *)superVC
+          completeBlock:(void(^)(NSString *password, DNPopinLockPasswordViewController *passwordVC))completeBlock
+   forgetPasswordAction:(void(^)(DNPopinLockPasswordViewController *passwordVC))forgetPasswordAction
+           dismissBlock:(void(^)())dismissBlock;
 
   /**
 
@@ -78,7 +73,7 @@
 
   */
 
-  \- (void)dismissComplete:(void(^)())callBack;
+  - (void)dismissComplete:(void(^)())callBack;
 
   /**
 
@@ -86,5 +81,5 @@
 
   */
 
-  \- (void)clearInput;
-
+  - (void)clearInput;
+```
