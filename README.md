@@ -2,84 +2,62 @@
 
 + 一个方法即可完成调用
 
-  type1: DNLockerInputPasswordView 
+type1: DNLockerInputPasswordView 
 
 ```objc
-  /**
-
- 显示输入密码界面
-
- @param title 界面标题
-
- @param completeBlock 完成输入的回调
-
- @param forgetPasswordAction 忘记密码的回调
-
- @param dismissBlock 消失回调
-
- */
+/**
+显示输入密码界面
+@param title 界面标题
+@param completeBlock 完成输入的回调
+@param forgetPasswordAction 忘记密码的回调
+@param dismissBlock 消失回调
+*/
 + (void)showWithTitle:(NSString *)title 
-        completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock 
- forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction 
-         dismissBlock:(void(^)())dismissBlock;
+completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock 
+forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction 
+dismissBlock:(void(^)())dismissBlock;
 
-  /**
+/**
+移除界面
+*/
 
-  移除界面
+- (void)dismiss;
 
-  */
+/**
+清空输入
+*/
 
-  - (void)dismiss;
-
-  /**
-
-  清空输入
-
-  */
-
-  - (void)clearInput;
+- (void)clearInput;
 ```
 
-  type2: DNPopinLockerInputPasswordBoard
+type2: DNPopinLockerInputPasswordBoard
 
 ```objc
-  /**
+/**
+显示输入密码界面
+@param title 界面标题
+@param superVC 父控制器
+@param completeBlock 完成输入的回调
+@param forgetPasswordAction 忘记密码的回调
+@param dismissBlock 消失回调
+*/
 
-  显示输入密码界面
++ (void)showWithTitle:(NSString *)title
+superVC:(UIViewController *)superVC
+completeBlock:(void(^)(NSString *password, DNPopinLockPasswordViewController *passwordVC))completeBlock
+forgetPasswordAction:(void(^)(DNPopinLockPasswordViewController *passwordVC))forgetPasswordAction
+dismissBlock:(void(^)())dismissBlock;
 
-  @param title 界面标题
+/**
+移除界面
+@param callBack 完成移除后的回调
+*/
 
-  @param superVC 父控制器
+- (void)dismissComplete:(void(^)())callBack;
 
-  @param completeBlock 完成输入的回调
+/**
+清空输入
+*/
 
-  @param forgetPasswordAction 忘记密码的回调
-
-  @param dismissBlock 消失回调
-
-  */
-
-  + (void)showWithTitle:(NSString *)title
-                superVC:(UIViewController *)superVC
-          completeBlock:(void(^)(NSString *password, DNPopinLockPasswordViewController *passwordVC))completeBlock
-   forgetPasswordAction:(void(^)(DNPopinLockPasswordViewController *passwordVC))forgetPasswordAction
-           dismissBlock:(void(^)())dismissBlock;
-
-  /**
-
-  移除界面
-
-  @param callBack 完成移除后的回调
-
-  */
-
-  - (void)dismissComplete:(void(^)())callBack;
-
-  /**
-
-  清空输入
-
-  */
-
-  - (void)clearInput;
+- (void)clearInput;
 ```
