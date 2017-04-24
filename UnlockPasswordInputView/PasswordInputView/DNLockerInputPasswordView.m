@@ -15,9 +15,9 @@
 
 @interface DNLockerInputPasswordBoard : UIView
 <
-    UICollectionViewDelegate,
-    UICollectionViewDataSource,
-    UICollectionViewDelegateFlowLayout
+UICollectionViewDelegate,
+UICollectionViewDataSource,
+UICollectionViewDelegateFlowLayout
 >
 
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -29,9 +29,9 @@
 
 @interface DNLockerInputPasswordView ()
 <
-    UICollectionViewDelegate,
-    UICollectionViewDataSource,
-    UICollectionViewDelegateFlowLayout
+UICollectionViewDelegate,
+UICollectionViewDataSource,
+UICollectionViewDelegateFlowLayout
 >
 
 @property (nonatomic, strong) UIImage *bgImage;
@@ -211,7 +211,7 @@
     } else {
         [[UIApplication sharedApplication] setStatusBarHidden:NO];
     }
-
+    
 }
 
 #pragma mark - Actions
@@ -252,12 +252,12 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 @end
 

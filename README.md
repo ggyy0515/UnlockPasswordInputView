@@ -2,7 +2,7 @@
 
 + 一个方法即可完成调用
 
-type1: DNLockerInputPasswordView 
+**type1: DNLockerInputPasswordView** 
 
 ```objc
 /**
@@ -13,9 +13,9 @@ type1: DNLockerInputPasswordView
 @param dismissBlock 消失回调
 */
 + (void)showWithTitle:(NSString *)title 
-completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock 
-forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction 
-dismissBlock:(void(^)())dismissBlock;
+        completeBlock:(void(^)(NSString *password, DNLockerInputPasswordView *view))completeBlock 
+ forgetPasswordAction:(void(^)(DNLockerInputPasswordView *view))forgetPasswordAction 
+         dismissBlock:(void(^)())dismissBlock;
 
 /**
 移除界面
@@ -30,7 +30,7 @@ dismissBlock:(void(^)())dismissBlock;
 - (void)clearInput;
 ```
 
-type2: DNPopinLockerInputPasswordBoard
+**type2: DNPopinLockerInputPasswordBoard**
 
 ```objc
 /**
@@ -42,11 +42,11 @@ type2: DNPopinLockerInputPasswordBoard
 @param dismissBlock 消失回调
 */
 
-+ (void)showWithTitle:(NSString *)title
-superVC:(UIViewController *)superVC
-completeBlock:(void(^)(NSString *password, DNPopinLockPasswordViewController *passwordVC))completeBlock
-forgetPasswordAction:(void(^)(DNPopinLockPasswordViewController *passwordVC))forgetPasswordAction
-dismissBlock:(void(^)())dismissBlock;
++ (void)showWithTitle:(NSString *)title 
+              superVC:(UIViewController *)superVC 
+        completeBlock:(void(^)(NSString *password, DNPopinLockPasswordViewController *passwordVC))completeBlock 
+ forgetPasswordAction:(void(^)(DNPopinLockPasswordViewController *passwordVC))forgetPasswordAction 
+         dismissBlock:(void(^)())dismissBlock;
 
 /**
 移除界面
